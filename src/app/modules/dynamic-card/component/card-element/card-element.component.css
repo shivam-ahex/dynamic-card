@@ -1,0 +1,19 @@
+.card-element {
+    margin: 0px 20px 20px 10px;
+}
+
+.mat-card {
+    width: 250px;
+}
+
+.card-text {
+    font-size: 20px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.current-date {
+    text-align: right;
+    font-weight: 100;
+    margin-bottom: -15px !important;
+}

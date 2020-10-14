@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(242, 239, 239);
+}
+
+.mat-bottom-sheet-container {
+  background: #3b3c36 !important;
+}
+
+a:focus {
+  color: white !important;
+  outline: none;
+}
+
+.out-0:focus, :focus-visible {
+  outline: none !important;
+}
+
+button:focus {
+  outline: none!important;
+}
+
+.dark-blue {
+  background: #1e90ff;
+}
+
+.purple {
+  background: #7433ff;
+}
+
+.red {
+  background: #dc143c;
+}
+
+.green {
+  background: #adff2f;
+}
+
+.yellow {
+  background: #ffff00;
+}
+
+.sky-blue {
+  background: #00bfff;
+}

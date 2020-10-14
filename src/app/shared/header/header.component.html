@@ -1,0 +1,12 @@
+<div class="header-wrapper">
+    <nav class="navbar navbar-light bg-light nav-header">
+
+        <a class="navbar-brand nav-text"> <span class="material-icons header-icon" (click)="openSideBar()">
+                view_headline
+            </span>NOTES</a>
+    </nav>
+</div>
+
+<div class="sidebar-section">
+    <app-side-bar *ngIf="showSideBar"></app-side-bar>
+</div>

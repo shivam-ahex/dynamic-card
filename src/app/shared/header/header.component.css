@@ -1,0 +1,20 @@
+.nav-header {
+  background: transparent linear-gradient(285deg, #7433ff 0%, #ff33dd 100%) 0% 0% no-repeat padding-box;
+  height: 80px;
+}
+
+.nav-text {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+.header-icon {
+  padding-right: 40px;
+  font-size: 30px;
+  cursor: pointer;
+}

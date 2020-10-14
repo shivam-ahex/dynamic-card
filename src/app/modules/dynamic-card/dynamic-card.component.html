@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<div class="text-input-section out-0">
+    <mat-card class="text-card out-0">
+        <textarea name="cardInput" placeholder="Please take a note" class="texting-area out-0" cols="30"
+            [(ngModel)]="cardText" rows="2" (focus)="enableButton()"></textarea>
+        <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style" *ngIf="isEnable">
+            <mat-button-toggle *ngFor="let style of buttonStyleData" class="{{style.class}} out-0" value="{{style.id}}"
+                (click)="createCardElement(style.class)">
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </mat-card>
+</div>
+<div class="card-section">
+    <app-card-element *ngFor="let card of cardData" [styleData]="buttonStyleData" [card]="card"></app-card-element>
+</div>

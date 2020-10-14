@@ -1,0 +1,16 @@
+<div class="edit-text-input-section out-0">
+    <div class="delete-option">
+        <span class="material-icons delete-icon" (click)="deleteCard()">
+            delete
+        </span>
+    </div>
+    <mat-card class="edit-text-card out-0">
+        <textarea name="cardInput" placeholder="Please take a note" class="edit-texting-area out-0" cols="30"
+            [(ngModel)]="data.card.cardText" rows="2"></textarea>
+        <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
+            <mat-button-toggle *ngFor="let style of data.style" [mat-dialog-close]="data"
+                (click)="assignStyle(style.class)" class="{{style.class}} out-0">
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </mat-card>
+</div>
